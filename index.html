@@ -6,8 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SeamlessHR Front-end Test - Google Home Page</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="search-page">
+      <header>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <img class="products" src="./img/products.png" />
+        <img class="avatar" src="./img/default_image.png" />
+      </header>
+      <div class="google-img">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        />
+        <form onsubmit="return onSearch()">
+          <div class="search-div">
+            <div class="search-holder">
+              <div class="search-icon">
+                <i class="material-icons">
+                  search
+                </i>
+              </div>
+              <div class="input-container">
+                <div class="input-top-div"></div>
+                <input
+                  id="search_input"
+                  class="input"
+                  maxlength="2048"
+                  type="text"
+                  aria-autocomplete="both"
+                  autocapitalize="off"
+                  autocomplete="off"
+                  autocorrect="off"
+                  autofocus=""
+                  role="combobox"
+                  spellcheck="false"
+                  title="Search"
+                  value=""
+                  aria-label="Search"
+                  list="search-data"
+                  onKeyPress="return checkSubmit(event)"
+                />
+              </div>
+              <div class="microphone-container">
+                <div class="microphone">
+                  <i class="material-icons">
+                    mic
+                  </i>
+                </div>
+              </div>
+            </div>
+            <datalist id="search-data">
+              <option value="Where to learn CSS"> </option>
+              <option value="Learning HTML5 in 2020"> </option>
+              <option value="Learn Javascript"> </option>
+              <option value="How to cook fried rice"> </option>
+              <option value="Who is the president of America"> </option>
+              <option value="Symptoms of malaria"> </option>
+              <option value="Is the corona virus in Africa?"> </option>
+              <option value="Why was Trump no impeached?"> </option>
+              <option value="Reasons for having a pet"> </option>
+            </datalist>
+          </div>
+
+          <div class="button-container">
+            <input type="submit" value="Google Search" />
+            <input type="submit" value="I'm Feeling Lucky" />
+          </div>
+
+          <div class="links-container">
+            Google offered in: <a href="#">Hausa</a> <a href="#">Igbo</a>
+            <a href="#">Èdè Yorùbá</a> <a href="#">Nigerian Pidgin</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="country">
+        Nigeria
+      </div>
+      <footer>
+        <a class="leftlinks" href="#">Advertising</a>
+        <a class="leftlinks" href="#">Business</a>
+        <a class="leftlinks" href="#">About</a>
+        <a class="leftlinks" href="#">How Search works</a>
+        <a class="rightlinks" href="#">Settings</a>
+        <a class="rightlinks" href="#">Terms</a>
+        <a class="rightlinks" href="#">Privacy</a>
+      </footer>
+    </div>
+
+    <!-- <script
+      async
+      src="https://cse.google.com/cse.js?cx=015789153900057170789:lhikxdhplts"
+    ></script>
+    <div class="gcse-search"></div> -->
+
+    <!-- script -->
     <script src="./js/main.js"></script>
   </body>
 </html>

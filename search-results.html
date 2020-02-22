@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Google Search Results</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="sr-search-container">
+        <div class="logo">
+          <a href="#"
+            ><img
+              src="./img/google.png"
+              alt="Google Logo"
+              height="30"
+              width="92"
+          /></a>
+        </div>
+        <form action="./search-results.html">
+          <div class="sr-search-input-container">
+            <div class="sr-search-wrapper">
+              <div class="sr-input-search">
+                <input
+                  id="sr-search-term"
+                  class="sr-search-input"
+                  maxlength="2048"
+                  name="q"
+                  type="text"
+                  aria-autocomplete="both"
+                  aria-haspopup="false"
+                  autocapitalize="off"
+                  autocomplete="off"
+                  autocorrect="off"
+                  role="combobox"
+                  spellcheck="false"
+                  title="Search"
+                  value=""
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+            <div class="sr-microphone-wrapper">
+              <div class="sr-microphone">
+                <div class="sr-mic">
+                  <i class="material-icons">
+                    mic
+                  </i>
+                </div>
+              </div>
+            </div>
+            <button class="sr-search-button" type="submit">
+              <div class="sr-search-icon-wrapper">
+                <i class="material-icons">
+                  search
+                </i>
+              </div>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="sr-right-section">
+        <img class="products" src="./img/products.png" />
+        <img class="avatar" src="./img/default_image.png" />
+      </div>
+    </header>
+    <div class="sr-top-header">
+      <nav class="sr-top-nav">
+        <div class="sr-media-holder">
+          <div class="sr-all active">
+            <i class="material-icons">
+              search
+            </i>
+            All
+          </div>
+          <div class="sr-all">
+            <i class="material-icons">
+              ondemand_video
+            </i>
+            Videos
+          </div>
+          <div class="sr-all">
+            <i class="material-icons">
+              image
+            </i>
+            Images
+          </div>
+          <div class="sr-all">
+            <i class="material-icons">
+              notes
+            </i>
+            News
+          </div>
+          <div class="sr-all">
+            <i class="material-icons">
+              place
+            </i>
+            Maps
+          </div>
+          <div class="sr-all">
+            <i class="material-icons">
+              more_vert
+            </i>
+            More
+          </div>
+          <div class="sr-all ml-3">
+            Settings
+          </div>
+          <div class="sr-all no-hover-color">
+            <div class="btn">
+              Tools
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="sr-total-search">
+      About 354,000,000 results <nobr> (0.52 seconds)&nbsp;</nobr>
+    </div>
+    <div class="sr-search-results-container">
+      <div class="sr-ads-container">
+        <ul>
+          <li class="list-ads">
+            <div class="sr-ads-top-header">
+              <a href="#">
+                <div class="sr-ads-holder">
+                  <span>Ad</span>
+                  <cite class="UdQCqe"
+                    >www.udemy.com/<i
+                      class="material-icons"
+                      style="vertical-align: bottom;"
+                    >
+                      arrow_drop_down
+                    </i></cite
+                  >‎
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./js/search-result.js"></script>
+  </body>
+</html>
