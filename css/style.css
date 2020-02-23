@@ -200,7 +200,7 @@ footer {
   right: 0px;
   background: #f2f2f2;
   padding-top: 22px;
-  padding-left: 0.7em;
+  padding-left: 1em;
   border-top: 1px solid #e9e9e9;
   font-size: 13px;
 }
@@ -224,8 +224,9 @@ a:visited,
 a:active {
   color: #5f6368;
   font-family: arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
+  padding-left: 0.5em;
 }
 
 footer a:hover {
@@ -659,100 +660,36 @@ div.sr-ads-container div.related-searches div a {
   width: 10px;
 }
 
-/* ======= end search results page */
-
-/*! CSS Used from: Embedded */
-a:link {
-  color: #1a0dab;
-}
-a:visited {
-  color: #609;
-}
-.cur,
-.b {
+.current {
   font-weight: bold;
 }
-h1 {
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  font-family: arial, sans-serif;
-}
-h1 {
-  font-size: 14px;
-}
-h1 {
-  font-weight: normal;
-}
-#nav a {
-  display: block;
-}
-.csb {
+
+.nav-span {
   background: url(../img/nav_logo299.webp) no-repeat;
   overflow: hidden;
   background-position: 0 0;
   height: 40px;
   display: block;
 }
+
 #nav td {
   padding: 0;
   text-align: center;
 }
-#pagination-wrapper a span {
+
+#pagination-wrapper p {
   cursor: pointer;
-}
-#pagination-wrapper a {
   white-space: nowrap;
 }
-#pagination-wrapper #pagination a {
-  color: #4285f4;
-  font-weight: normal;
-}
-#pagination-wrapper #pagination .cur {
+
+#pagination-wrapper #pagination .current {
   color: rgba(0, 0, 0, 0.87);
   font-weight: normal;
 }
-a:link {
-  cursor: pointer;
+
+p.pagination-links {
+  color: #4285f4;
+  font-weight: normal;
 }
-a.pagination-links {
-  text-decoration: none;
-}
-a.pagination-links:hover {
-  text-decoration: underline;
-}
-.pagination-links,
-.navend span,
-#nav a.pn {
-  text-decoration: none;
-}
-#pagination-wrapper {
-  visibility: hidden;
-}
-#cnt #pagination-wrapper {
-  width: 632px;
-}
-/*! CSS Used from: Embedded */
-a.pagination-links:link {
-  color: #1a0dab;
-}
-#rcnt a:hover,
-#nav a.pn:hover {
-  text-decoration: underline;
-}
-.bNg8Rb {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  z-index: -1000;
-}
-/*! CSS Used from: Embedded */
-#pagination-wrapper {
-  visibility: inherit;
-}
+
+/* ======= end search results page */

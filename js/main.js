@@ -35,9 +35,6 @@ let data = [
   }
 ];
 
-// display the search page
-document.getElementById("search-page").style.display = "block";
-
 // check to see if the enter key was pressed and submit the form.
 function checkSubmit(e) {
   if (e && e.keyCode == 13) {
@@ -53,21 +50,36 @@ function onSearch() {
   return false;
 }
 
-// get search term for related searches
-function getSearchTerm() {
-  window.localStorage["search-term"];
-}
-
 // populate the search data
 function populateData() {
   data.forEach(element => {
     // Create option element.
     var option = document.createElement("option");
     // Set the value using the name key in data array.
-    option.value = element;
+    option.value = element.name;
     // populate datalist with options.
     suggestions.appendChild(option);
   });
 }
 
 populateData();
+
+// get search term from localstorage
+function getSearchTerm() {
+  let searchTerm = "";
+  if (
+    window.localStorage["search-term"] !== undefined ||
+    window.localStorage["search-term"] !== null
+  ) {
+    searchTerm = window.localStorage["search-term"];
+  } else {
+    searchTerm = "";
+  }
+  document.getElementById("search_input").value = searchTerm;
+
+  // search term for related searches
+  document.getElementById("related-search-term").innerText = searchTerm;
+  document.getElementById("search_input").focus();
+}
+
+getSearchTerm();

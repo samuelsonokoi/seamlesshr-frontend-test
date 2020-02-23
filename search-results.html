@@ -23,12 +23,12 @@
               width="92"
           /></a>
         </div>
-        <form action="./search-results.html">
+        <form onsubmit="return onSearch()" autocomplete="on">
           <div class="sr-search-input-container">
             <div class="sr-search-wrapper">
               <div class="sr-input-search">
                 <input
-                  id="sr-search-term"
+                  id="search_input"
                   class="sr-search-input"
                   maxlength="2048"
                   name="q"
@@ -43,6 +43,8 @@
                   title="Search"
                   value=""
                   aria-label="Search"
+                  list="search-data"
+                  onchange="populateData()"
                 />
               </div>
             </div>
@@ -63,6 +65,7 @@
               </div>
             </button>
           </div>
+          <datalist id="search-data"> </datalist>
         </form>
       </div>
       <div class="sr-right-section">
@@ -272,62 +275,63 @@
               <table style="border-collapse:collapse;text-align:left;margin:30px auto 30px" id="nav" role="presentation">
                 <tbody>
                   <tr valign="top">
-                    <td class="b navend"><span class="csb"
-                        style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-24px 0;width:28px"></span>
+                    <td class="b navend">
+                      <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-24px 0;width:28px"></span>
                     </td>
-                    <td class="cur"><span class="csb"
-                        style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-53px 0;width:20px"></span>1
+                    <td class="current">
+                      <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-53px 0;width:20px"></span>1
                     </td>
-                    <td><a aria-label="Page 2" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>2</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>
+                        2
+                      </p>
                     </td>
-                    <td><a aria-label="Page 3" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>3</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>3</p>
                     </td>
-                    <td><a aria-label="Page 4" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>4</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>4
+                      </p>
                     </td>
-                    <td><a aria-label="Page 5" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>5</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>5
+                      </p>
                     </td>
-                    <td><a aria-label="Page 6" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>6</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>6
+                      </p>
                     </td>
-                    <td><a aria-label="Page 7" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>7</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>7
+                      </p>
                     </td>
-                    <td><a aria-label="Page 8" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>8</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>8
+                      </p>
                     </td>
-                    <td><a aria-label="Page 9" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>9</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>9
+                      </p>
                     </td>
-                    <td><a aria-label="Page 10" class="pagination-links"
-                        href="#"><span
-                          class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>10</a>
+                    <td>
+                      <p class="pagination-links">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-74px 0;width:20px"></span>10
+                      </p>
                     </td>
-                    <td aria-level="3" class="b navend" role="heading"><a class="pn"
-                        href="#"
-                        id="pnnext" style="text-align:left"><span class="csb ch"
-                          style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-96px 0;width:71px"></span><span
-                          style="display:block;margin-left:53px">Next</span></a></td>
+                    <td aria-level="3" class="b navend" role="heading">
+                      <p class="pagination-next" id="pnnext" style="text-align:left">
+                        <span class="nav-span" style="background:url(./img/nav_logo299.webp) no-repeat;background-position:-96px 0;width:71px"></span>
+                        <span style="display:block;margin-left:53px">Next</span>
+                      </p>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -353,6 +357,6 @@
     </footer>
 
     <!-- script -->
-    <script src="./js/search-result.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
