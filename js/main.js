@@ -66,11 +66,9 @@ populateData();
 
 // get search term from localstorage
 function getSearchTerm() {
+  console.log(window.localStorage["search-term"]);
   let searchTerm = "";
-  if (
-    window.localStorage["search-term"] !== undefined ||
-    window.localStorage["search-term"] !== null
-  ) {
+  if (window.localStorage["search-term"] !== undefined) {
     searchTerm = window.localStorage["search-term"];
   } else {
     searchTerm = "";
@@ -78,7 +76,9 @@ function getSearchTerm() {
   document.getElementById("search_input").value = searchTerm;
 
   // search term for related searches
-  document.getElementById("related-search-term").innerText = searchTerm;
+  if (document.getElementById("related-search-term") !== null) {
+    document.getElementById("related-search-term").innerText = searchTerm;
+  }
   document.getElementById("search_input").focus();
 }
 
