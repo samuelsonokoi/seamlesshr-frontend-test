@@ -1,5 +1,39 @@
 // get search value
 let search = document.getElementById("search_input");
+let suggestions = document.getElementById("search-data");
+
+let data = [
+  {
+    name: "Where to learn CSS"
+  },
+  {
+    name: "Learning HTML5 in 2020"
+  },
+  {
+    name: "Learn Javascript"
+  },
+  {
+    name: "How to cook fried rice"
+  },
+  {
+    name: "Who is the president of America?"
+  },
+  {
+    name: "Symptoms of malaria"
+  },
+  {
+    name: "Is the corona virus in Africa?"
+  },
+  {
+    name: "Why was Trump no impeached?"
+  },
+  {
+    name: "Reasons for having a pet"
+  },
+  {
+    name: "React or Angular"
+  }
+];
 
 // display the search page
 document.getElementById("search-page").style.display = "block";
@@ -18,3 +52,13 @@ function onSearch() {
   // return false to cancel submit event
   return false;
 }
+
+// populate the search data
+function populateData() {
+  data.forEach(element => {
+    suggestions.innerHTML +=
+      `<option value="${element.name}"> </option>` + "<br />";
+  });
+}
+
+populateData();
