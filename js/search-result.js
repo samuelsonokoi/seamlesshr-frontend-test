@@ -10,6 +10,9 @@ function getSearchTerm() {
     searchTerm = "";
   }
   document.getElementById("sr-search-term").value = searchTerm;
+
+  // search term for related searches
+  document.getElementById("related-search-term").innerText = searchTerm;
   document.getElementById("sr-search-term").focus();
   console.log(searchTerm);
 }

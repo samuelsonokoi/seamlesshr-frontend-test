@@ -623,4 +623,136 @@ div.sr-ads-container ul.sr-links-li > li h3 {
   font-weight: normal;
 }
 
+div.sr-ads-container div.related-searches {
+  display: inline-block;
+  width: 100%;
+}
+
+div.sr-ads-container div.related-searches h3 {
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+div.sr-ads-container div.related-searches div {
+  font-size: 14px;
+  margin-top: -1px;
+  padding-bottom: 1px;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: top;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+div.sr-ads-container div.related-searches div a {
+  display: block;
+  padding: 3px 32px 3px 1em;
+}
+
+.location {
+  background: #9e9e9e;
+  border-radius: 100%;
+  display: inline-block;
+  height: 10px;
+  margin: 6px 4px 9px 0;
+  vertical-align: middle;
+  width: 10px;
+}
+
 /* ======= end search results page */
+
+/*! CSS Used from: Embedded */
+a:link {
+  color: #1a0dab;
+}
+a:visited {
+  color: #609;
+}
+.cur,
+.b {
+  font-weight: bold;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: arial, sans-serif;
+}
+h1 {
+  font-size: 14px;
+}
+h1 {
+  font-weight: normal;
+}
+#nav a {
+  display: block;
+}
+.csb {
+  background: url(../img/nav_logo299.webp) no-repeat;
+  overflow: hidden;
+  background-position: 0 0;
+  height: 40px;
+  display: block;
+}
+#nav td {
+  padding: 0;
+  text-align: center;
+}
+#pagination-wrapper a span {
+  cursor: pointer;
+}
+#pagination-wrapper a {
+  white-space: nowrap;
+}
+#pagination-wrapper #pagination a {
+  color: #4285f4;
+  font-weight: normal;
+}
+#pagination-wrapper #pagination .cur {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: normal;
+}
+a:link {
+  cursor: pointer;
+}
+a.pagination-links {
+  text-decoration: none;
+}
+a.pagination-links:hover {
+  text-decoration: underline;
+}
+.pagination-links,
+.navend span,
+#nav a.pn {
+  text-decoration: none;
+}
+#pagination-wrapper {
+  visibility: hidden;
+}
+#cnt #pagination-wrapper {
+  width: 632px;
+}
+/*! CSS Used from: Embedded */
+a.pagination-links:link {
+  color: #1a0dab;
+}
+#rcnt a:hover,
+#nav a.pn:hover {
+  text-decoration: underline;
+}
+.bNg8Rb {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  z-index: -1000;
+}
+/*! CSS Used from: Embedded */
+#pagination-wrapper {
+  visibility: inherit;
+}

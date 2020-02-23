@@ -53,11 +53,20 @@ function onSearch() {
   return false;
 }
 
+// get search term for related searches
+function getSearchTerm() {
+  window.localStorage["search-term"];
+}
+
 // populate the search data
 function populateData() {
   data.forEach(element => {
-    suggestions.innerHTML +=
-      `<option value="${element.name}"> </option>` + "<br />";
+    // Create option element.
+    var option = document.createElement("option");
+    // Set the value using the name key in data array.
+    option.value = element;
+    // populate datalist with options.
+    suggestions.appendChild(option);
   });
 }
 

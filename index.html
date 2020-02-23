@@ -23,7 +23,7 @@
         <img
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         />
-        <form onsubmit="return onSearch()">
+        <form onsubmit="return onSearch()" autocomplete="on">
           <div class="search-div">
             <div class="search-holder">
               <div class="search-icon">
@@ -40,10 +40,7 @@
                   type="text"
                   aria-autocomplete="both"
                   autocapitalize="off"
-                  autocomplete="off"
                   autocorrect="off"
-                  autofocus=""
-                  role="combobox"
                   spellcheck="false"
                   title="Search"
                   value=""
@@ -60,17 +57,7 @@
                 </div>
               </div>
             </div>
-            <datalist id="search-data">
-              <option value="Where to learn CSS"> </option>
-              <option value="Learning HTML5 in 2020"> </option>
-              <option value="Learn Javascript"> </option>
-              <option value="How to cook fried rice"> </option>
-              <option value="Who is the president of America"> </option>
-              <option value="Symptoms of malaria"> </option>
-              <option value="Is the corona virus in Africa?"> </option>
-              <option value="Why was Trump no impeached?"> </option>
-              <option value="Reasons for having a pet"> </option>
-            </datalist>
+            <datalist id="search-data"> </datalist>
           </div>
 
           <div class="button-container">
